@@ -21,7 +21,7 @@ pipeline {
 
     stage('Publish') {
       steps {
-        bat(script: 'dotnet clean dotnet_jenkins.csproj', encoding: 'UTF-8')
+        sh 'dotnet publish dotnet_jenkins.csproj'
       }
     }
 
