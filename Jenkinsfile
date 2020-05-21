@@ -9,7 +9,6 @@ pipeline {
 
     stage('Retore packages') {
       steps {
-        bat(script: 'dotnet respore dotnet_jenkins.csporj', encoding: 'UTF-8')
         sh 'dotnet restore dotnet_jenkins.csproj'
       }
     }
