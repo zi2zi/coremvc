@@ -15,7 +15,7 @@ pipeline {
 
     stage('Clean') {
       steps {
-        bat(script: 'dotnet clean dotnet_jenkins.csproj', encoding: 'UTF-8')
+        sh 'dotnet clean dotnet_jenkins.csproj'
       }
     }
 
